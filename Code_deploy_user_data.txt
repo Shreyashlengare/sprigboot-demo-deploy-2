@@ -1,0 +1,18 @@
+#!/bin/bash
+sudo apt update
+sudo apt-get install ruby
+sudo apt-get install wget
+cd /home/ubuntu
+
+#Install CodeDeployAgent
+wget https://aws-codedeploy-ap-south-1.s3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+
+#INstall Python
+sudo apt-get install -y python3-pip
+sudo apt install awscli
+
+
+#Install Java
+sudo apt install openjdk-17-jdk
