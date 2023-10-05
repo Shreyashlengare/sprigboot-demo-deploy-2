@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
+  - source: /BackendApplication.jar
     destination: /home/ec2-user/server
 
 file_exists_behaviour: OVERWRITE
