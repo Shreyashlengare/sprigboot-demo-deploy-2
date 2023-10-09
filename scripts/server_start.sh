@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-cd /home/ec2-user/server
-sudo java -jar -Dserver.port=80 *.jar > /dev/null 2> /dev/null < /dev/null &
+#!/bin/bash
+sudo /home/ec2-user/apache-tomcat-9.0.73/bin/./server_start.sh

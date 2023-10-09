@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-sudo pkill -f 'java -jar'
+#!/bin/bash
+sudo /home/ec2-user/apache-tomcat-9.0.73/bin/./server_stop.sh

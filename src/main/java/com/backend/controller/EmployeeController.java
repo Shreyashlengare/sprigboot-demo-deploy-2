@@ -103,9 +103,10 @@ public class EmployeeController {
         EmployeeUpdate update = service.updateEmp(id, employeeUpdate);
         return ResponseEntity.ok(update);
     }
-    @GetMapping({"/"})
+    @GetMapping({"/demo"})
     public String emp() {
-        return "Hello, World!";
+        return
+                "Hello, World!";
     }
 
 }

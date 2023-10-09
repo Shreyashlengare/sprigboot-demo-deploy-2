@@ -1,9 +1,16 @@
 #!/bin/bash
-sudo apt update
-sudo apt get install ruby-full
-sudo apt get install wget
-//cd /home/ec2-user
-wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
-chmod +x ./install
+sudo apt update -y
+sudo apt install -y ruby wget default-jre
+
+# Change directory to your desired location, for example, /home/ubuntu
+cd /home/ubuntu
+
+# Install CodeDeployAgent
+wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+sudo chmod +x ./install
 sudo ./install auto
-sudo apt install openjdk-17-jdk
+
+# Install Apache Tomcat
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz
+sudo tar -xvf apache-tomcat-9.0.80.tar.gz
+sudo apache-tomcat-9.0.80/bin/startup.sh
