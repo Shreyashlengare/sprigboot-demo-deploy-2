@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /BackendApplication.jar
-    destination: /home/ec2-user/apache-tomcat-9.0.73/webapps/
+    destination: /home/ec2-user/apache-tomcat-10.1.14/webapps/
 
 file_exists_behaviour: OVERWRITE
 

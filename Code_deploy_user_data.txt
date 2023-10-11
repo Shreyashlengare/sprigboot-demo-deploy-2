@@ -11,6 +11,6 @@ sudo chmod +x ./install
 sudo ./install auto
 
 # Install Apache Tomcat
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz
-sudo tar -xvf apache-tomcat-9.0.80.tar.gz
-sudo apache-tomcat-9.0.80/bin/startup.sh
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.14/bin/apache-tomcat-10.1.14.tar.gz
+sudo tar -xvf apache-tomcat-10.1.14.tar.gz
+sudo apache-tomcat-10.1.14/bin/startup.sh
