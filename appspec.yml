@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /BackendApplication.jar
+  - source: /BackendApplication.war
     destination: /home/ec2-user/apache-tomcat-10.1.14/webapps/
 
 file_exists_behaviour: OVERWRITE
