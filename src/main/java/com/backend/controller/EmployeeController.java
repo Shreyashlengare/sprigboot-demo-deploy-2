@@ -21,7 +21,7 @@ import java.util.List;
 
 //@CrossOrigin("*")
 //@CrossOrigin(origins = "http://localhost:3000")
-@CrossOrigin(origins = "http://frontendnew2.s3-website.ap-south-1.amazonaws.com")
+@CrossOrigin(origins = "*")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/employee")
