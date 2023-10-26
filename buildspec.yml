@@ -13,7 +13,7 @@ phases:
       - echo Build completed
 artifacts:
   files:
-    - target/BackendApplication.war
+    - deployment-archive/BackendApplication.war
     - Deployment/BackendApp.service
     - scripts/*.sh
     - appspec.yml
