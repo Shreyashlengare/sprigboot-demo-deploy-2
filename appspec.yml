@@ -26,4 +26,4 @@ hooks:
       runas: root
   permissions:
     - object: /home/ec2-user/apache-tomcat-10.1.14/webapps/BackendApplication.war
-      pattern: 750
+      mode: 750
