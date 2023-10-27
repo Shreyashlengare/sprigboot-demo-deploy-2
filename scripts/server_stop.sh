@@ -1,8 +1,14 @@
 #!/bin/bash
-sudo /home/ubuntu/apache-tomcat-10.1.14/bin/shutdown.sh
 
-# Give some time for Tomcat to gracefully shut down
-sleep 5
+# Define the port number you want to free
+PORT_TO_FREE=8082
 
-# Find and kill the Tomcat process (adjust the command as needed)
-sudo pkill -f "catalina"
+# Check if a process is listening on the specified port
+LISTENING_PROCESS=$(lsof -i :8082 | awk 'NR==2{print $2}')
+
+if [ -n "$LISTENING_PROCESS" ]; then
+  echo "A process is listening on port 8082 (PID: $LISTENING_PROCESS). Stopping it..."
+  kill $LISTENING_PROCESS
+else
+  echo "No process found listening on port 8082."
+fi
