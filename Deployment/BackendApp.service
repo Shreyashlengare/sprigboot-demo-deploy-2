@@ -4,7 +4,7 @@ Description=My Spring Boot Application
 [Service]
 User=ubuntu
 ExecStart=/usr/bin/java -jar /home/ec2-user/apache-tomcat-10.1.14/webapps/BackendApplication.war
-WorkingDirectory=/home/ec2-user/apache-tomcat-10.1.14/webapps
+WorkingDirectory=/home/ubuntu/apache-tomcat-10.1.14/webapps
 Restart=always
 StandardOutput=journal
 StandardError=syslog
