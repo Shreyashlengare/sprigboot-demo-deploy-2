@@ -20,10 +20,10 @@ hooks:
     - location: server_stop.sh
       timeout: 300
       runas: root
-  #ApplicationStart:
-   # - location: server_start.sh
-    #  timeout: 3600
-     # runas: root
+  ApplicationStart:
+    - location: server_start.sh
+      timeout: 3600
+      runas: root
  # permissions:
   #  - object: /home/ec2-user/apache-tomcat-10.1.14/webapps/BackendApplication.war
    #   mode: 750
