@@ -106,7 +106,7 @@ public class EmployeeController {
     @GetMapping({"/demo"})
     public String emp() {
         return
-                "Namaste, ippopay!";
+                "hello there, ippopay!";
     }
 
 }
