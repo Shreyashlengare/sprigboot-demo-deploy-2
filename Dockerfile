@@ -5,10 +5,11 @@ RUN apk --no-cache add maven
 # Set the working directory inside the container
 WORKDIR /app
 
-RUN mvn clean install
+
 # Copy the JAR file into the container at /app
 COPY . .
 
+RUN mvn clean install
 # Expose the port that your Spring Boot application listens on
 EXPOSE 8081
 
